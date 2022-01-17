@@ -1,0 +1,15 @@
+asgiref==3.4.1
+backports.zoneinfo==0.2.1
+certifi==2021.10.8
+charset-normalizer==2.0.10
+Django==4.0.1
+docutils==0.18.1
+idna==3.3
+Kivy==2.0.0
+Kivy-Garden==0.1.4
+kivymd==0.104.2
+Pillow==9.0.0
+Pygments==2.11.2
+requests==2.27.1
+sqlparse==0.4.2
+urllib3==1.26.8
