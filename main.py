@@ -4,7 +4,7 @@ from threading import Thread
 from django.core.management import execute_from_command_line
 from kivy.app import App
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'backend.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'django_web_app.settings'
 
 from kivy.lang import Builder
 from kivy.uix.anchorlayout import AnchorLayout
@@ -68,7 +68,7 @@ class KivyDjango(App):
         return self.mainbox
 
     def run_django_thread(self):
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_web_app.settings')
         thread = Thread(target=execute_from_command_line, args=(["python", "runserver", "--noreload"],))
         thread.start()
 
